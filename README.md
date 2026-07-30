@@ -303,8 +303,8 @@ Add screenshots in the `docs/screenshots/` folder and update the image paths if 
 
 ## Live Demo and GitHub Repository
 
-- Live demo: [Add live demo link]
-- GitHub repository: [Add GitHub repository link]
+- Live demo: https://writeright-ai.streamlit.app/
+- GitHub repository: https://github.com/ratulexe/writeright-ai
 
 ## License
 
