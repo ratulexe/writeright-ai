@@ -289,16 +289,6 @@ Do not upload `.env` to GitHub. Streamlit Community Cloud should use its Secrets
 - Add authentication for personal dashboards
 - Add automated tests for input validation and response parsing
 
-## Group Member Contributions
-
-| Member Name | Role | Responsibilities |
-|---|---|---|
-| [Add group leader name] | Project Lead | Project planning, final review, GitHub repository management |
-| [Add member 2 name] | Frontend Developer | Streamlit interface, layout, custom UI styling |
-| [Add member 3 name] | AI Integration Developer | Gemini API integration, prompt design, response handling |
-| [Add member 4 name] | Testing and Documentation | Testing checklist, README, setup verification |
-| [Add member 5 name] | Deployment Coordinator | Streamlit Community Cloud deployment and secrets setup |
-
 ## Screenshots
 
 Add screenshots in the `docs/screenshots/` folder and update the image paths if needed.
