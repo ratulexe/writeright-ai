@@ -20,8 +20,27 @@ st.set_page_config(
 # ---------------------------------------------------------
 
 load_dotenv()
-gemini_api_key = os.getenv("GEMINI_API_KEY", "").strip()
-google_api_key = os.getenv("GOOGLE_API_KEY", "").strip()
+
+
+def get_streamlit_secret(name: str) -> str:
+    """Read a Streamlit secret when available without breaking local runs."""
+
+    try:
+        value = st.secrets.get(name, "")
+    except (FileNotFoundError, KeyError, AttributeError):
+        return ""
+
+    return str(value).strip()
+
+
+gemini_api_key = (
+    get_streamlit_secret("GEMINI_API_KEY")
+    or os.getenv("GEMINI_API_KEY", "").strip()
+)
+google_api_key = (
+    get_streamlit_secret("GOOGLE_API_KEY")
+    or os.getenv("GOOGLE_API_KEY", "").strip()
+)
 api_key = gemini_api_key or google_api_key
 
 if api_key:
@@ -419,7 +438,8 @@ if check_button:
     elif not api_key:
         st.error(
             "Gemini API key was not found. "
-            "Add GEMINI_API_KEY to your .env file."
+            "Add GEMINI_API_KEY in Streamlit Cloud secrets, or to your "
+            "local .env file when running locally."
         )
 
     else:
