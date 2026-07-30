@@ -301,10 +301,6 @@ Add screenshots in the `docs/screenshots/` folder and update the image paths if 
 
 ![Result page placeholder](docs/screenshots/result-page.png)
 
-### Error Validation
-
-![Error validation placeholder](docs/screenshots/error-validation.png)
-
 ## Live Demo and GitHub Repository
 
 - Live demo: [Add live demo link]
