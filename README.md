@@ -322,6 +322,6 @@ If this project is submitted for academic purposes, confirm the required license
 
 ## Contact
 
-- Group leader: [Add group leader name]
-- Email: [Add contact email]
-- Institution/Class: [Add institution or course name]
+- Group leader: Ratul Kole
+- Email: theratulkole@gmail.com
+- Institution/Class: JIS University
